@@ -9,4 +9,6 @@ package com.sysdent.utils;
 
 public class DefineUtils {
 
+    public static final String LOG_FILE_PATH = "default.log";
+
 }
