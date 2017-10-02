@@ -16,6 +16,9 @@ import com.sysdent.utils.Log;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
+import java.awt.SystemColor;
+import java.awt.Font;
 
 /*****************************
  * Project: SysDent
@@ -28,6 +31,7 @@ public class LoginPanel extends Panel {
 
     public LoginPanel(JFrame parent) {
 	super(parent);
+	setBackground(SystemColor.window);
 
 	GridBagLayout gridBagLayout = (GridBagLayout) getLayout();
 	gridBagLayout.columnWidths = new int[] { 0, 0, 25, 0, 0 };
@@ -35,6 +39,7 @@ public class LoginPanel extends Panel {
 	gridBagLayout.columnWeights = new double[] { 0.0, 0.0, 1.0, 0.0, 0.0 };
 
 	JLabel lblEnterCredentials = new JLabel("Enter credentials");
+	lblEnterCredentials.setFont(new Font("Tahoma", Font.BOLD, 11));
 	GridBagConstraints gbc_lblEnterCredentials = new GridBagConstraints();
 	gbc_lblEnterCredentials.gridwidth = 2;
 	gbc_lblEnterCredentials.insets = new Insets(0, 0, 5, 5);
