@@ -8,7 +8,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import com.sysdent.panel.login.LoginPanel;
+import com.sysdent.utils.DefineUtils;
 import com.sysdent.utils.Log;
+import com.sysdent.utils.ResourceLoader;
 
 /*****************************
  * Project: SysDent
@@ -51,6 +53,7 @@ public class Main extends JFrame {
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	setBounds(100, 100, 445, 150);
 	setUndecorated(true);
+	setIconImage(ResourceLoader.getIconImage(DefineUtils.PATH_ICON_LOGO_MAIN));
 	contentPane = new JPanel();
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	contentPane.setLayout(new BorderLayout(0, 0));

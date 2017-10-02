@@ -10,5 +10,6 @@ package com.sysdent.utils;
 public class DefineUtils {
 
     public static final String LOG_FILE_PATH = "default.log";
+    public static final String PATH_ICON_LOGO_MAIN = "/Logo_Main.png";
 
 }
